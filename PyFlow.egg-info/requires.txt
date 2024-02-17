@@ -1,0 +1,7 @@
+Qt.py
+blinker
+nine
+docutils
+
+[:python_version < "3.4"]
+enum

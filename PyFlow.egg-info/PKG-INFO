@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: PyFlow
+Version: 2.0.1
+Summary: A general purpose runtime extendable python qt node editor.
+Home-page: https://wonderworks-software.github.io/PyFlow
+Author: Ilgar Lunin, Pedro Cabrera
+Author-email: wonderworks.software@gmail.com
+Project-URL: Bug Tracker, https://github.com/wonderworks-software/PyFlow/issues
+Project-URL: Documentation, https://pyflow.readthedocs.io
+Project-URL: Source Code, https://github.com/wonderworks-software/PyFlow
+Keywords: visual programming framework
+Classifier: License :: Appache-2.0
+License-File: LICENSE
