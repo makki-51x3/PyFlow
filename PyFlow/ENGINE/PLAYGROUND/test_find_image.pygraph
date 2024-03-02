@@ -1,0 +1,3672 @@
+{
+    "name": "root",
+    "category": "",
+    "vars": [],
+    "nodes": [
+        {
+            "package": "PyFlowBase",
+            "lib": "DefaultLib",
+            "type": "makePath",
+            "owningGraphName": "root",
+            "name": "makePath4",
+            "uuid": "eb3e09e4-afea-4f94-be4b-8ab5bad1e25f",
+            "inputs": [
+                {
+                    "name": "path",
+                    "package": "PyFlowBase",
+                    "fullName": "makePath4_path",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"/home/makki/Documents/GitHub/Automator/automator_temp\"",
+                    "uuid": "dbe50fe9-40e4-42e7-8cb0-c0ee39692d17",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "path",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "out",
+                    "package": "PyFlowBase",
+                    "fullName": "makePath4_out",
+                    "dataType": "StringPin",
+                    "direction": 1,
+                    "value": "\"/home/makki/Documents/GitHub/Automator/automator_temp\"",
+                    "uuid": "6e55b244-5796-451a-abe5-bf9b757de76b",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makePath4",
+                            "outPinId": 1,
+                            "rhsNodeName": "combineStrings10",
+                            "inPinId": 1,
+                            "lhsNodeUid": "eb3e09e4-afea-4f94-be4b-8ab5bad1e25f",
+                            "rhsNodeUid": "9a16cd5c-853f-4299-bfaf-b4cd7ad5bf84"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "out",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "6e55b244-5796-451a-abe5-bf9b757de76b",
+                                "destinationUUID": "deb33a09-e0d4-4c45-bf96-f88b434f1df3",
+                                "sourceName": "makePath4_out",
+                                "destinationName": "combineStrings10_str1",
+                                "uuid": "3ba95f42-ba42-4516-8da4-0106f280f4a6",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "makePath4"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">makePath4</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -225.58119472518547,
+            "y": -525.3667298204978
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": "DefaultLib",
+            "type": "makeString",
+            "owningGraphName": "root",
+            "name": "makeString7",
+            "uuid": "40767b17-37cc-470e-9d7a-edac306c71cb",
+            "inputs": [
+                {
+                    "name": "s",
+                    "package": "PyFlowBase",
+                    "fullName": "makeString7_s",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"firefoxBrowserActivated.png\"",
+                    "uuid": "e1cb7c78-283f-4aaa-825b-31c2bb07bb5a",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "graphInputs12",
+                            "outPinId": 1,
+                            "rhsNodeName": "makeString7",
+                            "inPinId": 1,
+                            "lhsNodeUid": "b25b3c2c-7301-4c53-8595-fc90ac6da73b",
+                            "rhsNodeUid": "40767b17-37cc-470e-9d7a-edac306c71cb"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "s",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "45deed07-f136-4ce7-b53d-fdc3e1f28e0d",
+                                "destinationUUID": "e1cb7c78-283f-4aaa-825b-31c2bb07bb5a",
+                                "sourceName": "graphInputs12_image_fileName",
+                                "destinationName": "makeString7_s",
+                                "uuid": "1be6b2a7-9929-43f4-9065-77e36ce4f29f",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "out",
+                    "package": "PyFlowBase",
+                    "fullName": "makeString7_out",
+                    "dataType": "StringPin",
+                    "direction": 1,
+                    "value": "\"firefoxBrowserActivated.png\"",
+                    "uuid": "4589a032-3d99-400b-82bc-42dabbfa3717",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeString7",
+                            "outPinId": 1,
+                            "rhsNodeName": "combineStrings10",
+                            "inPinId": 2,
+                            "lhsNodeUid": "40767b17-37cc-470e-9d7a-edac306c71cb",
+                            "rhsNodeUid": "9a16cd5c-853f-4299-bfaf-b4cd7ad5bf84"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "out",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "4589a032-3d99-400b-82bc-42dabbfa3717",
+                                "destinationUUID": "3d9a95e3-a950-4f6c-b145-89ed0608fa7d",
+                                "sourceName": "makeString7_out",
+                                "destinationName": "combineStrings10_str2",
+                                "uuid": "67777678-2cf4-451a-b5be-e60a5c970cbe",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "makeString7"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">makeString7</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -220.6338010905913,
+            "y": -458.68493298822045
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": null,
+            "type": "imageDisplay",
+            "owningGraphName": "root",
+            "name": "imageDisplay9",
+            "uuid": "22a7298b-5526-4525-bf4c-6f714670af59",
+            "inputs": [
+                {
+                    "name": "path",
+                    "package": "PyFlowBase",
+                    "fullName": "imageDisplay9_path",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"/home/makki/Documents/GitHub/Automator/automator_temp/firefoxBrowserActivated.png\"",
+                    "uuid": "644d59dc-14dd-4e9a-bc6e-99dab70f79a6",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "combineStrings10",
+                            "outPinId": 1,
+                            "rhsNodeName": "imageDisplay9",
+                            "inPinId": 2,
+                            "lhsNodeUid": "9a16cd5c-853f-4299-bfaf-b4cd7ad5bf84",
+                            "rhsNodeUid": "22a7298b-5526-4525-bf4c-6f714670af59"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "path",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "9d61db8e-d0d1-4048-ab33-39fe5c9e8c8d",
+                                "destinationUUID": "644d59dc-14dd-4e9a-bc6e-99dab70f79a6",
+                                "sourceName": "combineStrings10_out",
+                                "destinationName": "imageDisplay9_path",
+                                "uuid": "ca4efa0e-5e47-4ae0-86b6-e3bf733aec41",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "inExec",
+                    "package": "PyFlowBase",
+                    "fullName": "imageDisplay9_inExec",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "2b1cf2ad-f7db-446a-9104-13d6ef92f0fb",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "sequence18",
+                            "outPinId": 1,
+                            "rhsNodeName": "imageDisplay9",
+                            "inPinId": 1,
+                            "lhsNodeUid": "3a901870-d886-4be2-8a47-4b54490d81d0",
+                            "rhsNodeUid": "22a7298b-5526-4525-bf4c-6f714670af59"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "inExec",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "e7e25325-9497-43c1-bd6d-104fcd054092",
+                                "destinationUUID": "2b1cf2ad-f7db-446a-9104-13d6ef92f0fb",
+                                "sourceName": "sequence18_1",
+                                "destinationName": "imageDisplay9_inExec",
+                                "uuid": "ecc28fa4-0fcb-48c5-924b-e13ccd733fd3",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "outExec",
+                    "package": "PyFlowBase",
+                    "fullName": "imageDisplay9_outExec",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "c9f2adcb-c18f-4a69-b5bc-48b24c2dc006",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "outExec",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "failed",
+                    "package": "PyFlowBase",
+                    "fullName": "imageDisplay9_failed",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "1a38e4a7-5ea1-4032-8a0b-25087d024631",
+                    "linkedTo": [],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "failed",
+                        "wires": {}
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "imageDisplay9"
+            },
+            "wrapper": {
+                "resize": {
+                    "w": 109.0,
+                    "h": 38.0
+                },
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">imageDisplay9</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": 68.20519013494811,
+            "y": -616.6868679329557
+        },
+        {
+            "package": "Automator",
+            "lib": "StringUtilitiesLib",
+            "type": "combineStrings",
+            "owningGraphName": "root",
+            "name": "combineStrings10",
+            "uuid": "9a16cd5c-853f-4299-bfaf-b4cd7ad5bf84",
+            "inputs": [
+                {
+                    "name": "separator",
+                    "package": "PyFlowBase",
+                    "fullName": "combineStrings10_separator",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"/\"",
+                    "uuid": "f76c3d4c-faa1-4307-b74b-c79586bf1002",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeString11",
+                            "outPinId": 1,
+                            "rhsNodeName": "combineStrings10",
+                            "inPinId": 3,
+                            "lhsNodeUid": "05da9878-1061-4bba-a83d-dbcfc19dd0cf",
+                            "rhsNodeUid": "9a16cd5c-853f-4299-bfaf-b4cd7ad5bf84"
+                        }
+                    ],
+                    "pinIndex": 3,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "separator",
+                        "wires": {
+                            "3": {
+                                "sourceUUID": "4c01608f-fdfc-4ebd-b392-57a3ea790b4c",
+                                "destinationUUID": "f76c3d4c-faa1-4307-b74b-c79586bf1002",
+                                "sourceName": "makeString11_out",
+                                "destinationName": "combineStrings10_separator",
+                                "uuid": "49858ee1-0c11-4a48-8827-1b18dcee3d94",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "str2",
+                    "package": "PyFlowBase",
+                    "fullName": "combineStrings10_str2",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"firefoxBrowserActivated.png\"",
+                    "uuid": "3d9a95e3-a950-4f6c-b145-89ed0608fa7d",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeString7",
+                            "outPinId": 1,
+                            "rhsNodeName": "combineStrings10",
+                            "inPinId": 2,
+                            "lhsNodeUid": "40767b17-37cc-470e-9d7a-edac306c71cb",
+                            "rhsNodeUid": "9a16cd5c-853f-4299-bfaf-b4cd7ad5bf84"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "str2",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "4589a032-3d99-400b-82bc-42dabbfa3717",
+                                "destinationUUID": "3d9a95e3-a950-4f6c-b145-89ed0608fa7d",
+                                "sourceName": "makeString7_out",
+                                "destinationName": "combineStrings10_str2",
+                                "uuid": "67777678-2cf4-451a-b5be-e60a5c970cbe",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "str1",
+                    "package": "PyFlowBase",
+                    "fullName": "combineStrings10_str1",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"/home/makki/Documents/GitHub/Automator/automator_temp\"",
+                    "uuid": "deb33a09-e0d4-4c45-bf96-f88b434f1df3",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makePath4",
+                            "outPinId": 1,
+                            "rhsNodeName": "combineStrings10",
+                            "inPinId": 1,
+                            "lhsNodeUid": "eb3e09e4-afea-4f94-be4b-8ab5bad1e25f",
+                            "rhsNodeUid": "9a16cd5c-853f-4299-bfaf-b4cd7ad5bf84"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "str1",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "6e55b244-5796-451a-abe5-bf9b757de76b",
+                                "destinationUUID": "deb33a09-e0d4-4c45-bf96-f88b434f1df3",
+                                "sourceName": "makePath4_out",
+                                "destinationName": "combineStrings10_str1",
+                                "uuid": "3ba95f42-ba42-4516-8da4-0106f280f4a6",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "out",
+                    "package": "PyFlowBase",
+                    "fullName": "combineStrings10_out",
+                    "dataType": "StringPin",
+                    "direction": 1,
+                    "value": "\"/home/makki/Documents/GitHub/Automator/automator_temp/firefoxBrowserActivated.png\"",
+                    "uuid": "9d61db8e-d0d1-4048-ab33-39fe5c9e8c8d",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "combineStrings10",
+                            "outPinId": 1,
+                            "rhsNodeName": "imageDisplay9",
+                            "inPinId": 2,
+                            "lhsNodeUid": "9a16cd5c-853f-4299-bfaf-b4cd7ad5bf84",
+                            "rhsNodeUid": "22a7298b-5526-4525-bf4c-6f714670af59"
+                        },
+                        {
+                            "lhsNodeName": "combineStrings10",
+                            "outPinId": 1,
+                            "rhsNodeName": "FindImageOnScreenNode19",
+                            "inPinId": 1,
+                            "lhsNodeUid": "9a16cd5c-853f-4299-bfaf-b4cd7ad5bf84",
+                            "rhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "out",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "9d61db8e-d0d1-4048-ab33-39fe5c9e8c8d",
+                                "destinationUUID": "644d59dc-14dd-4e9a-bc6e-99dab70f79a6",
+                                "sourceName": "combineStrings10_out",
+                                "destinationName": "imageDisplay9_path",
+                                "uuid": "ca4efa0e-5e47-4ae0-86b6-e3bf733aec41",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            },
+                            "1": {
+                                "sourceUUID": "9d61db8e-d0d1-4048-ab33-39fe5c9e8c8d",
+                                "destinationUUID": "fef7af3c-c9bf-4abd-9494-b9106ab46029",
+                                "sourceName": "combineStrings10_out",
+                                "destinationName": "FindImageOnScreenNode19_ImagePath",
+                                "uuid": "042bb566-e19e-4251-ab29-26e8eba9a513",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "combineStrings10"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">combineStrings10</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -92.56002786529689,
+            "y": -485.93553982601134
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": "DefaultLib",
+            "type": "makeString",
+            "owningGraphName": "root",
+            "name": "makeString11",
+            "uuid": "05da9878-1061-4bba-a83d-dbcfc19dd0cf",
+            "inputs": [
+                {
+                    "name": "s",
+                    "package": "PyFlowBase",
+                    "fullName": "makeString11_s",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"/\"",
+                    "uuid": "f6f2aa38-d847-42b3-a449-28e4147e1561",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "s",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "out",
+                    "package": "PyFlowBase",
+                    "fullName": "makeString11_out",
+                    "dataType": "StringPin",
+                    "direction": 1,
+                    "value": "\"/\"",
+                    "uuid": "4c01608f-fdfc-4ebd-b392-57a3ea790b4c",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeString11",
+                            "outPinId": 1,
+                            "rhsNodeName": "combineStrings10",
+                            "inPinId": 3,
+                            "lhsNodeUid": "05da9878-1061-4bba-a83d-dbcfc19dd0cf",
+                            "rhsNodeUid": "9a16cd5c-853f-4299-bfaf-b4cd7ad5bf84"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "out",
+                        "wires": {
+                            "3": {
+                                "sourceUUID": "4c01608f-fdfc-4ebd-b392-57a3ea790b4c",
+                                "destinationUUID": "f76c3d4c-faa1-4307-b74b-c79586bf1002",
+                                "sourceName": "makeString11_out",
+                                "destinationName": "combineStrings10_separator",
+                                "uuid": "49858ee1-0c11-4a48-8827-1b18dcee3d94",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "makeString11"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">makeString11</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -222.63594513532644,
+            "y": -395.59415199455793
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": null,
+            "type": "graphInputs",
+            "owningGraphName": "root",
+            "name": "graphInputs12",
+            "uuid": "b25b3c2c-7301-4c53-8595-fc90ac6da73b",
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "exec_IN",
+                    "package": "PyFlowBase",
+                    "fullName": "graphInputs12_exec_IN",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "c50c18e9-4ab0-4337-967d-a670a0703706",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "graphInputs12",
+                            "outPinId": 2,
+                            "rhsNodeName": "sequence18",
+                            "inPinId": 1,
+                            "lhsNodeUid": "b25b3c2c-7301-4c53-8595-fc90ac6da73b",
+                            "rhsNodeUid": "3a901870-d886-4be2-8a47-4b54490d81d0"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        32,
+                        64,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "exec_IN",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "c50c18e9-4ab0-4337-967d-a670a0703706",
+                                "destinationUUID": "ef4ea7c9-64bd-40a6-81fe-e8253d9bf722",
+                                "sourceName": "graphInputs12_exec_IN",
+                                "destinationName": "sequence18_inExec",
+                                "uuid": "377d8da5-97c9-44a9-b60f-167d5902fd12",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "image_fileName",
+                    "package": "PyFlowBase",
+                    "fullName": "graphInputs12_image_fileName",
+                    "dataType": "StringPin",
+                    "direction": 1,
+                    "value": "\"firefoxBrowserActivated.png\"",
+                    "uuid": "45deed07-f136-4ce7-b53d-fdc3e1f28e0d",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "graphInputs12",
+                            "outPinId": 1,
+                            "rhsNodeName": "makeString7",
+                            "inPinId": 1,
+                            "lhsNodeUid": "b25b3c2c-7301-4c53-8595-fc90ac6da73b",
+                            "rhsNodeUid": "40767b17-37cc-470e-9d7a-edac306c71cb"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        32,
+                        64,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "image_fileName",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "45deed07-f136-4ce7-b53d-fdc3e1f28e0d",
+                                "destinationUUID": "e1cb7c78-283f-4aaa-825b-31c2bb07bb5a",
+                                "sourceName": "graphInputs12_image_fileName",
+                                "destinationName": "makeString7_s",
+                                "uuid": "1be6b2a7-9929-43f4-9065-77e36ce4f29f",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "graphInputs12"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">graphInputs12</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -371.0821937054724,
+            "y": -374.105484540825
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": null,
+            "type": "graphOutputs",
+            "owningGraphName": "root",
+            "name": "graphOutputs13",
+            "uuid": "ea06fcee-dd07-4feb-b0d5-0810e82cce9d",
+            "inputs": [
+                {
+                    "name": "found_image",
+                    "package": "PyFlowBase",
+                    "fullName": "graphOutputs13_found_image",
+                    "dataType": "BoolPin",
+                    "direction": 0,
+                    "value": "false",
+                    "uuid": "68b2208a-cc24-45c8-9be6-3fd957e7b468",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "FindImageOnScreenNode19",
+                            "outPinId": 1,
+                            "rhsNodeName": "graphOutputs13",
+                            "inPinId": 4,
+                            "lhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e",
+                            "rhsNodeUid": "ea06fcee-dd07-4feb-b0d5-0810e82cce9d"
+                        }
+                    ],
+                    "pinIndex": 4,
+                    "options": [
+                        32,
+                        64,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "found_image",
+                        "wires": {
+                            "4": {
+                                "sourceUUID": "bc141cbe-e98a-4b42-b40e-59cb15a6f13b",
+                                "destinationUUID": "68b2208a-cc24-45c8-9be6-3fd957e7b468",
+                                "sourceName": "FindImageOnScreenNode19_Found",
+                                "destinationName": "graphOutputs13_found_image",
+                                "uuid": "0023cb2a-52a2-4749-9f15-131810271213",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "center_y",
+                    "package": "PyFlowBase",
+                    "fullName": "graphOutputs13_center_y",
+                    "dataType": "IntPin",
+                    "direction": 0,
+                    "value": "1188",
+                    "uuid": "85cb2c88-ca05-412b-879c-1c304c088b69",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "FindImageOnScreenNode19",
+                            "outPinId": 3,
+                            "rhsNodeName": "graphOutputs13",
+                            "inPinId": 2,
+                            "lhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e",
+                            "rhsNodeUid": "ea06fcee-dd07-4feb-b0d5-0810e82cce9d"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        32,
+                        64,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "center_y",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "2059fea1-c440-45ea-889b-41cabb300f12",
+                                "destinationUUID": "85cb2c88-ca05-412b-879c-1c304c088b69",
+                                "sourceName": "FindImageOnScreenNode19_CenterY",
+                                "destinationName": "graphOutputs13_center_y",
+                                "uuid": "dac7822d-9b9f-4bac-b6a5-662760612937",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "exec_out",
+                    "package": "PyFlowBase",
+                    "fullName": "graphOutputs13_exec_out",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "38075b61-a6b5-486f-9c9f-f53444b14864",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "sequence",
+                            "outPinId": 1,
+                            "rhsNodeName": "graphOutputs13",
+                            "inPinId": 3,
+                            "lhsNodeUid": "44a8eba2-26c5-41c5-9f4d-00697a27a00e",
+                            "rhsNodeUid": "ea06fcee-dd07-4feb-b0d5-0810e82cce9d"
+                        }
+                    ],
+                    "pinIndex": 3,
+                    "options": [
+                        8,
+                        32,
+                        64,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "exec_out",
+                        "wires": {
+                            "3": {
+                                "sourceUUID": "43ce5dc3-7b49-4852-b2b5-33c7e5d4f4e2",
+                                "destinationUUID": "38075b61-a6b5-486f-9c9f-f53444b14864",
+                                "sourceName": "sequence_1",
+                                "destinationName": "graphOutputs13_exec_out",
+                                "uuid": "70415e77-50f0-48d5-84d3-588a364e2006",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "center_x",
+                    "package": "PyFlowBase",
+                    "fullName": "graphOutputs13_center_x",
+                    "dataType": "IntPin",
+                    "direction": 0,
+                    "value": "1044",
+                    "uuid": "1333087b-f3ff-4922-8c58-62b43ebcc877",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "FindImageOnScreenNode19",
+                            "outPinId": 2,
+                            "rhsNodeName": "graphOutputs13",
+                            "inPinId": 1,
+                            "lhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e",
+                            "rhsNodeUid": "ea06fcee-dd07-4feb-b0d5-0810e82cce9d"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        32,
+                        64,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "center_x",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "1743de0d-2a49-4744-8f68-1d96d9208a09",
+                                "destinationUUID": "1333087b-f3ff-4922-8c58-62b43ebcc877",
+                                "sourceName": "FindImageOnScreenNode19_CenterX",
+                                "destinationName": "graphOutputs13_center_x",
+                                "uuid": "47079963-dccb-48a8-8ec5-fc40bf5f6112",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [],
+            "meta": {
+                "var": {},
+                "label": "graphOutputs13"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">graphOutputs13</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": 264.63374993176063,
+            "y": -326.7790699096021
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": "DefaultLib",
+            "type": "makeFloat",
+            "owningGraphName": "root",
+            "name": "makeFloat14",
+            "uuid": "828cde37-ddb0-4125-9728-607aa8175839",
+            "inputs": [
+                {
+                    "name": "f",
+                    "package": "PyFlowBase",
+                    "fullName": "makeFloat14_f",
+                    "dataType": "FloatPin",
+                    "direction": 0,
+                    "value": "0.7",
+                    "uuid": "6b3b7dd6-422d-403a-bb61-746f136edc1d",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "f",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "out",
+                    "package": "PyFlowBase",
+                    "fullName": "makeFloat14_out",
+                    "dataType": "FloatPin",
+                    "direction": 1,
+                    "value": "0.7",
+                    "uuid": "bd614fe2-52bd-443b-8589-9beae82fd6bb",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeFloat14",
+                            "outPinId": 1,
+                            "rhsNodeName": "FindImageOnScreenNode19",
+                            "inPinId": 2,
+                            "lhsNodeUid": "828cde37-ddb0-4125-9728-607aa8175839",
+                            "rhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "out",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "bd614fe2-52bd-443b-8589-9beae82fd6bb",
+                                "destinationUUID": "2590e66e-bd66-433e-a0ef-700c508d6870",
+                                "sourceName": "makeFloat14_out",
+                                "destinationName": "FindImageOnScreenNode19_Threshold",
+                                "uuid": "c5fb4885-4198-4f6b-8658-4e65ac060e55",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "makeFloat14"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">makeFloat14</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -150.94255237945464,
+            "y": -319.8869236813325
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": "DefaultLib",
+            "type": "makeString",
+            "owningGraphName": "root",
+            "name": "makeString15",
+            "uuid": "30fe52b3-f825-47c4-b68b-eb59aab63fa9",
+            "inputs": [
+                {
+                    "name": "s",
+                    "package": "PyFlowBase",
+                    "fullName": "makeString15_s",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"0.7,1.5\"",
+                    "uuid": "83865899-4cc4-4e0d-9970-bc5357e757c1",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "s",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "out",
+                    "package": "PyFlowBase",
+                    "fullName": "makeString15_out",
+                    "dataType": "StringPin",
+                    "direction": 1,
+                    "value": "\"0.7,1.5\"",
+                    "uuid": "ce47856d-2bc5-4b61-8b88-6ce8fa818619",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeString15",
+                            "outPinId": 1,
+                            "rhsNodeName": "FindImageOnScreenNode19",
+                            "inPinId": 3,
+                            "lhsNodeUid": "30fe52b3-f825-47c4-b68b-eb59aab63fa9",
+                            "rhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "out",
+                        "wires": {
+                            "3": {
+                                "sourceUUID": "ce47856d-2bc5-4b61-8b88-6ce8fa818619",
+                                "destinationUUID": "3494923a-2571-4e44-9621-1dd8231b442e",
+                                "sourceName": "makeString15_out",
+                                "destinationName": "FindImageOnScreenNode19_ScaleRange",
+                                "uuid": "fd84f3bd-341c-4514-9edc-52a195874726",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "makeString15"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">makeString15</p></body></html>",
+                "exposeInputsToCompound": true,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -234.6868721744662,
+            "y": -295.94592210932933
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": "DefaultLib",
+            "type": "makeFloat",
+            "owningGraphName": "root",
+            "name": "makeFloat16",
+            "uuid": "4f099e94-8f23-42c5-82e2-2cbd0454f20f",
+            "inputs": [
+                {
+                    "name": "f",
+                    "package": "PyFlowBase",
+                    "fullName": "makeFloat16_f",
+                    "dataType": "FloatPin",
+                    "direction": 0,
+                    "value": "0.1",
+                    "uuid": "d2535a19-0ec0-4720-a294-ee8a61dcd26b",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "f",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "out",
+                    "package": "PyFlowBase",
+                    "fullName": "makeFloat16_out",
+                    "dataType": "FloatPin",
+                    "direction": 1,
+                    "value": "0.1",
+                    "uuid": "99736533-9a59-4e2d-8ce0-31cf1a15632c",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeFloat16",
+                            "outPinId": 1,
+                            "rhsNodeName": "FindImageOnScreenNode19",
+                            "inPinId": 4,
+                            "lhsNodeUid": "4f099e94-8f23-42c5-82e2-2cbd0454f20f",
+                            "rhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "out",
+                        "wires": {
+                            "4": {
+                                "sourceUUID": "99736533-9a59-4e2d-8ce0-31cf1a15632c",
+                                "destinationUUID": "7beb6482-1d34-4841-b1c0-56103620d902",
+                                "sourceName": "makeFloat16_out",
+                                "destinationName": "FindImageOnScreenNode19_ScaleStep",
+                                "uuid": "2ce604b6-19fd-4464-96c2-097b18604012",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "makeFloat16"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">makeFloat16</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -159.67824249589881,
+            "y": -250.66221196832225
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": "DefaultLib",
+            "type": "makeString",
+            "owningGraphName": "root",
+            "name": "makeString17",
+            "uuid": "ce78c6a3-2fce-4d19-898e-0b8550576258",
+            "inputs": [
+                {
+                    "name": "s",
+                    "package": "PyFlowBase",
+                    "fullName": "makeString17_s",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"\"",
+                    "uuid": "946e6bf9-75e6-416f-9bfc-cfa7d8ed2cfd",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "s",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "out",
+                    "package": "PyFlowBase",
+                    "fullName": "makeString17_out",
+                    "dataType": "StringPin",
+                    "direction": 1,
+                    "value": "\"\"",
+                    "uuid": "6fc915a0-b2e2-4fff-a6b6-2a7764c6d254",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeString17",
+                            "outPinId": 1,
+                            "rhsNodeName": "FindImageOnScreenNode19",
+                            "inPinId": 5,
+                            "lhsNodeUid": "ce78c6a3-2fce-4d19-898e-0b8550576258",
+                            "rhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "out",
+                        "wires": {
+                            "5": {
+                                "sourceUUID": "6fc915a0-b2e2-4fff-a6b6-2a7764c6d254",
+                                "destinationUUID": "5d10fc6d-dbde-451e-a7ca-ff3d9244af12",
+                                "sourceName": "makeString17_out",
+                                "destinationName": "FindImageOnScreenNode19_Region",
+                                "uuid": "289a1f7a-983a-4fd5-aeb0-c522dcd7a4f1",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "makeString17"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">makeString17</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -152.3448972386779,
+            "y": -176.9290999734585
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": null,
+            "type": "sequence",
+            "owningGraphName": "root",
+            "name": "sequence18",
+            "uuid": "3a901870-d886-4be2-8a47-4b54490d81d0",
+            "inputs": [
+                {
+                    "name": "inExec",
+                    "package": "PyFlowBase",
+                    "fullName": "sequence18_inExec",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "ef4ea7c9-64bd-40a6-81fe-e8253d9bf722",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "graphInputs12",
+                            "outPinId": 2,
+                            "rhsNodeName": "sequence18",
+                            "inPinId": 1,
+                            "lhsNodeUid": "b25b3c2c-7301-4c53-8595-fc90ac6da73b",
+                            "rhsNodeUid": "3a901870-d886-4be2-8a47-4b54490d81d0"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "inExec",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "c50c18e9-4ab0-4337-967d-a670a0703706",
+                                "destinationUUID": "ef4ea7c9-64bd-40a6-81fe-e8253d9bf722",
+                                "sourceName": "graphInputs12_exec_IN",
+                                "destinationName": "sequence18_inExec",
+                                "uuid": "377d8da5-97c9-44a9-b60f-167d5902fd12",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "2",
+                    "package": "PyFlowBase",
+                    "fullName": "sequence18_2",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "76138abc-b05f-43db-a77d-3736520f1b9d",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "sequence18",
+                            "outPinId": 2,
+                            "rhsNodeName": "FindImageOnScreenNode19",
+                            "inPinId": 6,
+                            "lhsNodeUid": "3a901870-d886-4be2-8a47-4b54490d81d0",
+                            "rhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        64,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Then 2",
+                        "wires": {
+                            "6": {
+                                "sourceUUID": "76138abc-b05f-43db-a77d-3736520f1b9d",
+                                "destinationUUID": "b0f3f2fc-2139-45d0-8d12-0245dabbafc9",
+                                "sourceName": "sequence18_2",
+                                "destinationName": "FindImageOnScreenNode19_Execute",
+                                "uuid": "bec3f563-7eeb-416b-8b20-4a98d37c9f2f",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "1",
+                    "package": "PyFlowBase",
+                    "fullName": "sequence18_1",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "e7e25325-9497-43c1-bd6d-104fcd054092",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "sequence18",
+                            "outPinId": 1,
+                            "rhsNodeName": "imageDisplay9",
+                            "inPinId": 1,
+                            "lhsNodeUid": "3a901870-d886-4be2-8a47-4b54490d81d0",
+                            "rhsNodeUid": "22a7298b-5526-4525-bf4c-6f714670af59"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        64,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Then 1",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "e7e25325-9497-43c1-bd6d-104fcd054092",
+                                "destinationUUID": "2b1cf2ad-f7db-446a-9104-13d6ef92f0fb",
+                                "sourceName": "sequence18_1",
+                                "destinationName": "imageDisplay9_inExec",
+                                "uuid": "ecc28fa4-0fcb-48c5-924b-e13ccd733fd3",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "sequence18"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">sequence18</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -100.61780017433375,
+            "y": -567.6590780131814,
+            "numOutputs": 2
+        },
+        {
+            "package": "Automator",
+            "lib": null,
+            "type": "FindImageOnScreenNode",
+            "owningGraphName": "root",
+            "name": "FindImageOnScreenNode19",
+            "uuid": "480208ae-3f6d-4209-882d-79c705c9758e",
+            "inputs": [
+                {
+                    "name": "Execute",
+                    "package": "PyFlowBase",
+                    "fullName": "FindImageOnScreenNode19_Execute",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "b0f3f2fc-2139-45d0-8d12-0245dabbafc9",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "sequence18",
+                            "outPinId": 2,
+                            "rhsNodeName": "FindImageOnScreenNode19",
+                            "inPinId": 6,
+                            "lhsNodeUid": "3a901870-d886-4be2-8a47-4b54490d81d0",
+                            "rhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e"
+                        }
+                    ],
+                    "pinIndex": 6,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Execute",
+                        "wires": {
+                            "6": {
+                                "sourceUUID": "76138abc-b05f-43db-a77d-3736520f1b9d",
+                                "destinationUUID": "b0f3f2fc-2139-45d0-8d12-0245dabbafc9",
+                                "sourceName": "sequence18_2",
+                                "destinationName": "FindImageOnScreenNode19_Execute",
+                                "uuid": "bec3f563-7eeb-416b-8b20-4a98d37c9f2f",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "ScaleRange",
+                    "package": "PyFlowBase",
+                    "fullName": "FindImageOnScreenNode19_ScaleRange",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"0.7,1.5\"",
+                    "uuid": "3494923a-2571-4e44-9621-1dd8231b442e",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeString15",
+                            "outPinId": 1,
+                            "rhsNodeName": "FindImageOnScreenNode19",
+                            "inPinId": 3,
+                            "lhsNodeUid": "30fe52b3-f825-47c4-b68b-eb59aab63fa9",
+                            "rhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e"
+                        }
+                    ],
+                    "pinIndex": 3,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "ScaleRange",
+                        "wires": {
+                            "3": {
+                                "sourceUUID": "ce47856d-2bc5-4b61-8b88-6ce8fa818619",
+                                "destinationUUID": "3494923a-2571-4e44-9621-1dd8231b442e",
+                                "sourceName": "makeString15_out",
+                                "destinationName": "FindImageOnScreenNode19_ScaleRange",
+                                "uuid": "fd84f3bd-341c-4514-9edc-52a195874726",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "ScaleStep",
+                    "package": "PyFlowBase",
+                    "fullName": "FindImageOnScreenNode19_ScaleStep",
+                    "dataType": "FloatPin",
+                    "direction": 0,
+                    "value": "0.1",
+                    "uuid": "7beb6482-1d34-4841-b1c0-56103620d902",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeFloat16",
+                            "outPinId": 1,
+                            "rhsNodeName": "FindImageOnScreenNode19",
+                            "inPinId": 4,
+                            "lhsNodeUid": "4f099e94-8f23-42c5-82e2-2cbd0454f20f",
+                            "rhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e"
+                        }
+                    ],
+                    "pinIndex": 4,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "ScaleStep",
+                        "wires": {
+                            "4": {
+                                "sourceUUID": "99736533-9a59-4e2d-8ce0-31cf1a15632c",
+                                "destinationUUID": "7beb6482-1d34-4841-b1c0-56103620d902",
+                                "sourceName": "makeFloat16_out",
+                                "destinationName": "FindImageOnScreenNode19_ScaleStep",
+                                "uuid": "2ce604b6-19fd-4464-96c2-097b18604012",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Threshold",
+                    "package": "PyFlowBase",
+                    "fullName": "FindImageOnScreenNode19_Threshold",
+                    "dataType": "FloatPin",
+                    "direction": 0,
+                    "value": "0.7",
+                    "uuid": "2590e66e-bd66-433e-a0ef-700c508d6870",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeFloat14",
+                            "outPinId": 1,
+                            "rhsNodeName": "FindImageOnScreenNode19",
+                            "inPinId": 2,
+                            "lhsNodeUid": "828cde37-ddb0-4125-9728-607aa8175839",
+                            "rhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Threshold",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "bd614fe2-52bd-443b-8589-9beae82fd6bb",
+                                "destinationUUID": "2590e66e-bd66-433e-a0ef-700c508d6870",
+                                "sourceName": "makeFloat14_out",
+                                "destinationName": "FindImageOnScreenNode19_Threshold",
+                                "uuid": "c5fb4885-4198-4f6b-8658-4e65ac060e55",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Region",
+                    "package": "PyFlowBase",
+                    "fullName": "FindImageOnScreenNode19_Region",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"\"",
+                    "uuid": "5d10fc6d-dbde-451e-a7ca-ff3d9244af12",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeString17",
+                            "outPinId": 1,
+                            "rhsNodeName": "FindImageOnScreenNode19",
+                            "inPinId": 5,
+                            "lhsNodeUid": "ce78c6a3-2fce-4d19-898e-0b8550576258",
+                            "rhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e"
+                        }
+                    ],
+                    "pinIndex": 5,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Region",
+                        "wires": {
+                            "5": {
+                                "sourceUUID": "6fc915a0-b2e2-4fff-a6b6-2a7764c6d254",
+                                "destinationUUID": "5d10fc6d-dbde-451e-a7ca-ff3d9244af12",
+                                "sourceName": "makeString17_out",
+                                "destinationName": "FindImageOnScreenNode19_Region",
+                                "uuid": "289a1f7a-983a-4fd5-aeb0-c522dcd7a4f1",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "ImagePath",
+                    "package": "PyFlowBase",
+                    "fullName": "FindImageOnScreenNode19_ImagePath",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"/home/makki/Documents/GitHub/Automator/automator_temp/firefoxBrowserActivated.png\"",
+                    "uuid": "fef7af3c-c9bf-4abd-9494-b9106ab46029",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "combineStrings10",
+                            "outPinId": 1,
+                            "rhsNodeName": "FindImageOnScreenNode19",
+                            "inPinId": 1,
+                            "lhsNodeUid": "9a16cd5c-853f-4299-bfaf-b4cd7ad5bf84",
+                            "rhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "ImagePath",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "9d61db8e-d0d1-4048-ab33-39fe5c9e8c8d",
+                                "destinationUUID": "fef7af3c-c9bf-4abd-9494-b9106ab46029",
+                                "sourceName": "combineStrings10_out",
+                                "destinationName": "FindImageOnScreenNode19_ImagePath",
+                                "uuid": "042bb566-e19e-4251-ab29-26e8eba9a513",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "Completed",
+                    "package": "PyFlowBase",
+                    "fullName": "FindImageOnScreenNode19_Completed",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "826283f0-1fa0-46de-8f78-87b299950b72",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "FindImageOnScreenNode19",
+                            "outPinId": 4,
+                            "rhsNodeName": "sequence",
+                            "inPinId": 1,
+                            "lhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e",
+                            "rhsNodeUid": "44a8eba2-26c5-41c5-9f4d-00697a27a00e"
+                        }
+                    ],
+                    "pinIndex": 4,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Completed",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "826283f0-1fa0-46de-8f78-87b299950b72",
+                                "destinationUUID": "0fccbb8d-fad5-404c-be17-34283e1989a2",
+                                "sourceName": "FindImageOnScreenNode19_Completed",
+                                "destinationName": "sequence_inExec",
+                                "uuid": "9d561e1b-d123-4f7b-b16a-a715912b78ec",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "CenterX",
+                    "package": "PyFlowBase",
+                    "fullName": "FindImageOnScreenNode19_CenterX",
+                    "dataType": "IntPin",
+                    "direction": 1,
+                    "value": "1044",
+                    "uuid": "1743de0d-2a49-4744-8f68-1d96d9208a09",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "FindImageOnScreenNode19",
+                            "outPinId": 2,
+                            "rhsNodeName": "convertTo",
+                            "inPinId": 1,
+                            "lhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e",
+                            "rhsNodeUid": "d6e92969-b898-41aa-8bc8-88488598d936"
+                        },
+                        {
+                            "lhsNodeName": "FindImageOnScreenNode19",
+                            "outPinId": 2,
+                            "rhsNodeName": "graphOutputs13",
+                            "inPinId": 1,
+                            "lhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e",
+                            "rhsNodeUid": "ea06fcee-dd07-4feb-b0d5-0810e82cce9d"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "CenterX",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "1743de0d-2a49-4744-8f68-1d96d9208a09",
+                                "destinationUUID": "1333087b-f3ff-4922-8c58-62b43ebcc877",
+                                "sourceName": "FindImageOnScreenNode19_CenterX",
+                                "destinationName": "graphOutputs13_center_x",
+                                "uuid": "47079963-dccb-48a8-8ec5-fc40bf5f6112",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Found",
+                    "package": "PyFlowBase",
+                    "fullName": "FindImageOnScreenNode19_Found",
+                    "dataType": "BoolPin",
+                    "direction": 1,
+                    "value": "false",
+                    "uuid": "bc141cbe-e98a-4b42-b40e-59cb15a6f13b",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "FindImageOnScreenNode19",
+                            "outPinId": 1,
+                            "rhsNodeName": "convertTo5",
+                            "inPinId": 1,
+                            "lhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e",
+                            "rhsNodeUid": "05d3f6af-fa00-4d7c-b490-f971d3944aea"
+                        },
+                        {
+                            "lhsNodeName": "FindImageOnScreenNode19",
+                            "outPinId": 1,
+                            "rhsNodeName": "graphOutputs13",
+                            "inPinId": 4,
+                            "lhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e",
+                            "rhsNodeUid": "ea06fcee-dd07-4feb-b0d5-0810e82cce9d"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Found",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "bc141cbe-e98a-4b42-b40e-59cb15a6f13b",
+                                "destinationUUID": "34e47398-dbec-4fd3-b05e-d65257a9edd7",
+                                "sourceName": "FindImageOnScreenNode19_Found",
+                                "destinationName": "convertTo5_in",
+                                "uuid": "f7a6e71f-3a08-45a1-bc4d-2d9966421e4f",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            },
+                            "4": {
+                                "sourceUUID": "bc141cbe-e98a-4b42-b40e-59cb15a6f13b",
+                                "destinationUUID": "68b2208a-cc24-45c8-9be6-3fd957e7b468",
+                                "sourceName": "FindImageOnScreenNode19_Found",
+                                "destinationName": "graphOutputs13_found_image",
+                                "uuid": "0023cb2a-52a2-4749-9f15-131810271213",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "CenterY",
+                    "package": "PyFlowBase",
+                    "fullName": "FindImageOnScreenNode19_CenterY",
+                    "dataType": "IntPin",
+                    "direction": 1,
+                    "value": "1188",
+                    "uuid": "2059fea1-c440-45ea-889b-41cabb300f12",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "FindImageOnScreenNode19",
+                            "outPinId": 3,
+                            "rhsNodeName": "convertTo3",
+                            "inPinId": 1,
+                            "lhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e",
+                            "rhsNodeUid": "4a4369af-35c1-49bf-9c2f-66e86a69e6c2"
+                        },
+                        {
+                            "lhsNodeName": "FindImageOnScreenNode19",
+                            "outPinId": 3,
+                            "rhsNodeName": "graphOutputs13",
+                            "inPinId": 2,
+                            "lhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e",
+                            "rhsNodeUid": "ea06fcee-dd07-4feb-b0d5-0810e82cce9d"
+                        }
+                    ],
+                    "pinIndex": 3,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "CenterY",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "2059fea1-c440-45ea-889b-41cabb300f12",
+                                "destinationUUID": "95fc9a32-7aea-4101-b016-c5a62efb0d06",
+                                "sourceName": "FindImageOnScreenNode19_CenterY",
+                                "destinationName": "convertTo3_in",
+                                "uuid": "63cb9aff-beb7-4eb2-86eb-f0278e14267f",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            },
+                            "2": {
+                                "sourceUUID": "2059fea1-c440-45ea-889b-41cabb300f12",
+                                "destinationUUID": "85cb2c88-ca05-412b-879c-1c304c088b69",
+                                "sourceName": "FindImageOnScreenNode19_CenterY",
+                                "destinationName": "graphOutputs13_center_y",
+                                "uuid": "dac7822d-9b9f-4bac-b6a5-662760612937",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "FindImageOnScreenNode19"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">FindImageOnScreenNode19</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -14.853161211552813,
+            "y": -282.17748425106527
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": null,
+            "type": "consoleOutput",
+            "owningGraphName": "root",
+            "name": "consoleOutput",
+            "uuid": "bb65d76c-cf3f-4dca-9791-c60dcac5a107",
+            "inputs": [
+                {
+                    "name": "entity",
+                    "package": "PyFlowBase",
+                    "fullName": "consoleOutput_entity",
+                    "dataType": "AnyPin",
+                    "direction": 0,
+                    "value": "\"1044__<==x&y==>__1188__Bool=>__False\"",
+                    "uuid": "c4dc06e5-2b29-4247-a960-07e203797f14",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "combineStrings6",
+                            "outPinId": 1,
+                            "rhsNodeName": "consoleOutput",
+                            "inPinId": 2,
+                            "lhsNodeUid": "d948fa6f-1676-416e-a2ce-b925ff47362b",
+                            "rhsNodeUid": "bb65d76c-cf3f-4dca-9791-c60dcac5a107"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        16,
+                        256,
+                        512
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "entity",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "d1768668-9cb7-4f24-b67f-c393ac8ef9dc",
+                                "destinationUUID": "c4dc06e5-2b29-4247-a960-07e203797f14",
+                                "sourceName": "combineStrings6_out",
+                                "destinationName": "consoleOutput_entity",
+                                "uuid": "38a8f852-4aa4-4a3c-85b2-e9e664cca9d2",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    },
+                    "currDataType": "StringPin"
+                },
+                {
+                    "name": "inExec",
+                    "package": "PyFlowBase",
+                    "fullName": "consoleOutput_inExec",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "90697974-d231-46f2-b2d6-b745605a86e0",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "sequence",
+                            "outPinId": 2,
+                            "rhsNodeName": "consoleOutput",
+                            "inPinId": 1,
+                            "lhsNodeUid": "44a8eba2-26c5-41c5-9f4d-00697a27a00e",
+                            "rhsNodeUid": "bb65d76c-cf3f-4dca-9791-c60dcac5a107"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "inExec",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "5b7eff81-06b4-4e18-80de-f63a0674e112",
+                                "destinationUUID": "90697974-d231-46f2-b2d6-b745605a86e0",
+                                "sourceName": "sequence_2",
+                                "destinationName": "consoleOutput_inExec",
+                                "uuid": "f854682c-bddd-4ea0-aa1e-8f4cf0d844b3",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "outExec",
+                    "package": "PyFlowBase",
+                    "fullName": "consoleOutput_outExec",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "711bdc99-3188-43ea-92be-016d5ebfc572",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "consoleOutput",
+                            "outPinId": 1,
+                            "rhsNodeName": "cliexit",
+                            "inPinId": 1,
+                            "lhsNodeUid": "bb65d76c-cf3f-4dca-9791-c60dcac5a107",
+                            "rhsNodeUid": "22ac3630-9c06-4fa7-96d9-214afba802be"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "outExec",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "711bdc99-3188-43ea-92be-016d5ebfc572",
+                                "destinationUUID": "391a5766-7f4e-46bd-adad-1e0d7c841438",
+                                "sourceName": "consoleOutput_outExec",
+                                "destinationName": "cliexit_inExec",
+                                "uuid": "175d7b8e-6bb5-4065-9685-fb7f8076d95c",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "consoleOutput"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">consoleOutput</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": 413.7631817399638,
+            "y": -179.27872243276352
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": null,
+            "type": "convertTo",
+            "owningGraphName": "root",
+            "name": "convertTo",
+            "uuid": "d6e92969-b898-41aa-8bc8-88488598d936",
+            "inputs": [
+                {
+                    "name": "in",
+                    "package": "PyFlowBase",
+                    "fullName": "convertTo_in",
+                    "dataType": "AnyPin",
+                    "direction": 0,
+                    "value": "1044",
+                    "uuid": "84e9ee96-bc9a-44f6-b292-8a87bcaee916",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "FindImageOnScreenNode19",
+                            "outPinId": 2,
+                            "rhsNodeName": "convertTo",
+                            "inPinId": 1,
+                            "lhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e",
+                            "rhsNodeUid": "d6e92969-b898-41aa-8bc8-88488598d936"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        16,
+                        256,
+                        512
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "in",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "1743de0d-2a49-4744-8f68-1d96d9208a09",
+                                "destinationUUID": "84e9ee96-bc9a-44f6-b292-8a87bcaee916",
+                                "sourceName": "FindImageOnScreenNode19_CenterX",
+                                "destinationName": "convertTo_in",
+                                "uuid": "d2c7e2b4-2094-485b-9a3d-c035581ac91b",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    },
+                    "currDataType": "IntPin"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "result",
+                    "package": "PyFlowBase",
+                    "fullName": "convertTo_result",
+                    "dataType": "AnyPin",
+                    "direction": 1,
+                    "value": "\"1044\"",
+                    "uuid": "a4b10d87-f9cf-4c4d-8ebc-48d15805d854",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "convertTo",
+                            "outPinId": 1,
+                            "rhsNodeName": "combineStrings",
+                            "inPinId": 1,
+                            "lhsNodeUid": "d6e92969-b898-41aa-8bc8-88488598d936",
+                            "rhsNodeUid": "c6ae9a7c-a5f3-4d1f-a1fa-d0c0f2c72f67"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "result",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "a4b10d87-f9cf-4c4d-8ebc-48d15805d854",
+                                "destinationUUID": "6dc4d1fb-f7a2-421f-99d8-498621a237bc",
+                                "sourceName": "convertTo_result",
+                                "destinationName": "combineStrings_str1",
+                                "uuid": "3cfe600b-2229-4497-88d4-a499e727d83d",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    },
+                    "currDataType": "StringPin"
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "convertTo"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">convertTo</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": 47.17334812630983,
+            "y": -142.71982565691252,
+            "currDataType": "StringPin"
+        },
+        {
+            "package": "Automator",
+            "lib": "StringUtilitiesLib",
+            "type": "combineStrings",
+            "owningGraphName": "root",
+            "name": "combineStrings",
+            "uuid": "c6ae9a7c-a5f3-4d1f-a1fa-d0c0f2c72f67",
+            "inputs": [
+                {
+                    "name": "str2",
+                    "package": "PyFlowBase",
+                    "fullName": "combineStrings_str2",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"1188\"",
+                    "uuid": "83cc958c-9ab8-4537-bf5a-5c905dd0a076",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "convertTo3",
+                            "outPinId": 1,
+                            "rhsNodeName": "combineStrings",
+                            "inPinId": 2,
+                            "lhsNodeUid": "4a4369af-35c1-49bf-9c2f-66e86a69e6c2",
+                            "rhsNodeUid": "c6ae9a7c-a5f3-4d1f-a1fa-d0c0f2c72f67"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "str2",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "ac76d92f-3976-4402-9217-5415b39acafa",
+                                "destinationUUID": "83cc958c-9ab8-4537-bf5a-5c905dd0a076",
+                                "sourceName": "convertTo3_result",
+                                "destinationName": "combineStrings_str2",
+                                "uuid": "ea4f46cf-84c4-47c8-ac1f-7287fce92f85",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "str1",
+                    "package": "PyFlowBase",
+                    "fullName": "combineStrings_str1",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"1044\"",
+                    "uuid": "6dc4d1fb-f7a2-421f-99d8-498621a237bc",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "convertTo",
+                            "outPinId": 1,
+                            "rhsNodeName": "combineStrings",
+                            "inPinId": 1,
+                            "lhsNodeUid": "d6e92969-b898-41aa-8bc8-88488598d936",
+                            "rhsNodeUid": "c6ae9a7c-a5f3-4d1f-a1fa-d0c0f2c72f67"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "str1",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "a4b10d87-f9cf-4c4d-8ebc-48d15805d854",
+                                "destinationUUID": "6dc4d1fb-f7a2-421f-99d8-498621a237bc",
+                                "sourceName": "convertTo_result",
+                                "destinationName": "combineStrings_str1",
+                                "uuid": "3cfe600b-2229-4497-88d4-a499e727d83d",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "separator",
+                    "package": "PyFlowBase",
+                    "fullName": "combineStrings_separator",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"__<==x&y==>__\"",
+                    "uuid": "f8137b0f-d7f4-44a8-9450-5c8ea239c8ae",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeString",
+                            "outPinId": 1,
+                            "rhsNodeName": "combineStrings",
+                            "inPinId": 3,
+                            "lhsNodeUid": "e345ba6e-5079-4ff9-b157-37774320f8f3",
+                            "rhsNodeUid": "c6ae9a7c-a5f3-4d1f-a1fa-d0c0f2c72f67"
+                        }
+                    ],
+                    "pinIndex": 3,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "separator",
+                        "wires": {
+                            "3": {
+                                "sourceUUID": "aea9b1be-324b-4dff-bd60-58400ba369e6",
+                                "destinationUUID": "f8137b0f-d7f4-44a8-9450-5c8ea239c8ae",
+                                "sourceName": "makeString_out",
+                                "destinationName": "combineStrings_separator",
+                                "uuid": "6460ff60-b236-4cf0-b5b5-f7178722bbbd",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "out",
+                    "package": "PyFlowBase",
+                    "fullName": "combineStrings_out",
+                    "dataType": "StringPin",
+                    "direction": 1,
+                    "value": "\"1044__<==x&y==>__1188\"",
+                    "uuid": "91bd52cc-48cc-4f76-8631-ae1b27e5eae9",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "combineStrings",
+                            "outPinId": 1,
+                            "rhsNodeName": "combineStrings6",
+                            "inPinId": 1,
+                            "lhsNodeUid": "c6ae9a7c-a5f3-4d1f-a1fa-d0c0f2c72f67",
+                            "rhsNodeUid": "d948fa6f-1676-416e-a2ce-b925ff47362b"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "out",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "91bd52cc-48cc-4f76-8631-ae1b27e5eae9",
+                                "destinationUUID": "9981e0f1-d406-4f9c-a27a-faeeae80feb6",
+                                "sourceName": "combineStrings_out",
+                                "destinationName": "combineStrings6_str1",
+                                "uuid": "57f8de87-03ce-44ca-b67e-e1df2428b84f",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "combineStrings"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">combineStrings</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": 201.46657411664597,
+            "y": -74.93141784954287
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": null,
+            "type": "convertTo",
+            "owningGraphName": "root",
+            "name": "convertTo3",
+            "uuid": "4a4369af-35c1-49bf-9c2f-66e86a69e6c2",
+            "inputs": [
+                {
+                    "name": "in",
+                    "package": "PyFlowBase",
+                    "fullName": "convertTo3_in",
+                    "dataType": "AnyPin",
+                    "direction": 0,
+                    "value": "1188",
+                    "uuid": "95fc9a32-7aea-4101-b016-c5a62efb0d06",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "FindImageOnScreenNode19",
+                            "outPinId": 3,
+                            "rhsNodeName": "convertTo3",
+                            "inPinId": 1,
+                            "lhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e",
+                            "rhsNodeUid": "4a4369af-35c1-49bf-9c2f-66e86a69e6c2"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        16,
+                        256,
+                        512
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "in",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "2059fea1-c440-45ea-889b-41cabb300f12",
+                                "destinationUUID": "95fc9a32-7aea-4101-b016-c5a62efb0d06",
+                                "sourceName": "FindImageOnScreenNode19_CenterY",
+                                "destinationName": "convertTo3_in",
+                                "uuid": "63cb9aff-beb7-4eb2-86eb-f0278e14267f",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    },
+                    "currDataType": "IntPin"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "result",
+                    "package": "PyFlowBase",
+                    "fullName": "convertTo3_result",
+                    "dataType": "AnyPin",
+                    "direction": 1,
+                    "value": "\"1188\"",
+                    "uuid": "ac76d92f-3976-4402-9217-5415b39acafa",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "convertTo3",
+                            "outPinId": 1,
+                            "rhsNodeName": "combineStrings",
+                            "inPinId": 2,
+                            "lhsNodeUid": "4a4369af-35c1-49bf-9c2f-66e86a69e6c2",
+                            "rhsNodeUid": "c6ae9a7c-a5f3-4d1f-a1fa-d0c0f2c72f67"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "result",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "ac76d92f-3976-4402-9217-5415b39acafa",
+                                "destinationUUID": "83cc958c-9ab8-4537-bf5a-5c905dd0a076",
+                                "sourceName": "convertTo3_result",
+                                "destinationName": "combineStrings_str2",
+                                "uuid": "ea4f46cf-84c4-47c8-ac1f-7287fce92f85",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    },
+                    "currDataType": "StringPin"
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "convertTo3"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">convertTo3</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": 41.97169828142094,
+            "y": -78.34717012531911,
+            "currDataType": "StringPin"
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": "DefaultLib",
+            "type": "makeString",
+            "owningGraphName": "root",
+            "name": "makeString",
+            "uuid": "e345ba6e-5079-4ff9-b157-37774320f8f3",
+            "inputs": [
+                {
+                    "name": "s",
+                    "package": "PyFlowBase",
+                    "fullName": "makeString_s",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"__<==x&y==>__\"",
+                    "uuid": "8c96043d-e205-47ed-b192-436333a3b9c4",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "s",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "out",
+                    "package": "PyFlowBase",
+                    "fullName": "makeString_out",
+                    "dataType": "StringPin",
+                    "direction": 1,
+                    "value": "\"__<==x&y==>__\"",
+                    "uuid": "aea9b1be-324b-4dff-bd60-58400ba369e6",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeString",
+                            "outPinId": 1,
+                            "rhsNodeName": "combineStrings",
+                            "inPinId": 3,
+                            "lhsNodeUid": "e345ba6e-5079-4ff9-b157-37774320f8f3",
+                            "rhsNodeUid": "c6ae9a7c-a5f3-4d1f-a1fa-d0c0f2c72f67"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "out",
+                        "wires": {
+                            "3": {
+                                "sourceUUID": "aea9b1be-324b-4dff-bd60-58400ba369e6",
+                                "destinationUUID": "f8137b0f-d7f4-44a8-9450-5c8ea239c8ae",
+                                "sourceName": "makeString_out",
+                                "destinationName": "combineStrings_separator",
+                                "uuid": "6460ff60-b236-4cf0-b5b5-f7178722bbbd",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "makeString"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">makeString</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": 100.13566196430183,
+            "y": 3.078067435064609
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": null,
+            "type": "sequence",
+            "owningGraphName": "root",
+            "name": "sequence",
+            "uuid": "44a8eba2-26c5-41c5-9f4d-00697a27a00e",
+            "inputs": [
+                {
+                    "name": "inExec",
+                    "package": "PyFlowBase",
+                    "fullName": "sequence_inExec",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "0fccbb8d-fad5-404c-be17-34283e1989a2",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "FindImageOnScreenNode19",
+                            "outPinId": 4,
+                            "rhsNodeName": "sequence",
+                            "inPinId": 1,
+                            "lhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e",
+                            "rhsNodeUid": "44a8eba2-26c5-41c5-9f4d-00697a27a00e"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "inExec",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "826283f0-1fa0-46de-8f78-87b299950b72",
+                                "destinationUUID": "0fccbb8d-fad5-404c-be17-34283e1989a2",
+                                "sourceName": "FindImageOnScreenNode19_Completed",
+                                "destinationName": "sequence_inExec",
+                                "uuid": "9d561e1b-d123-4f7b-b16a-a715912b78ec",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "2",
+                    "package": "PyFlowBase",
+                    "fullName": "sequence_2",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "5b7eff81-06b4-4e18-80de-f63a0674e112",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "sequence",
+                            "outPinId": 2,
+                            "rhsNodeName": "consoleOutput",
+                            "inPinId": 1,
+                            "lhsNodeUid": "44a8eba2-26c5-41c5-9f4d-00697a27a00e",
+                            "rhsNodeUid": "bb65d76c-cf3f-4dca-9791-c60dcac5a107"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        64,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Then 2",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "5b7eff81-06b4-4e18-80de-f63a0674e112",
+                                "destinationUUID": "90697974-d231-46f2-b2d6-b745605a86e0",
+                                "sourceName": "sequence_2",
+                                "destinationName": "consoleOutput_inExec",
+                                "uuid": "f854682c-bddd-4ea0-aa1e-8f4cf0d844b3",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "1",
+                    "package": "PyFlowBase",
+                    "fullName": "sequence_1",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "43ce5dc3-7b49-4852-b2b5-33c7e5d4f4e2",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "sequence",
+                            "outPinId": 1,
+                            "rhsNodeName": "graphOutputs13",
+                            "inPinId": 3,
+                            "lhsNodeUid": "44a8eba2-26c5-41c5-9f4d-00697a27a00e",
+                            "rhsNodeUid": "ea06fcee-dd07-4feb-b0d5-0810e82cce9d"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        64,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Then 1",
+                        "wires": {
+                            "3": {
+                                "sourceUUID": "43ce5dc3-7b49-4852-b2b5-33c7e5d4f4e2",
+                                "destinationUUID": "38075b61-a6b5-486f-9c9f-f53444b14864",
+                                "sourceName": "sequence_1",
+                                "destinationName": "graphOutputs13_exec_out",
+                                "uuid": "70415e77-50f0-48d5-84d3-588a364e2006",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "sequence"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">sequence</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": 167.40330173704052,
+            "y": -180.46649251626525,
+            "numOutputs": 2
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": null,
+            "type": "convertTo",
+            "owningGraphName": "root",
+            "name": "convertTo5",
+            "uuid": "05d3f6af-fa00-4d7c-b490-f971d3944aea",
+            "inputs": [
+                {
+                    "name": "in",
+                    "package": "PyFlowBase",
+                    "fullName": "convertTo5_in",
+                    "dataType": "AnyPin",
+                    "direction": 0,
+                    "value": "false",
+                    "uuid": "34e47398-dbec-4fd3-b05e-d65257a9edd7",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "FindImageOnScreenNode19",
+                            "outPinId": 1,
+                            "rhsNodeName": "convertTo5",
+                            "inPinId": 1,
+                            "lhsNodeUid": "480208ae-3f6d-4209-882d-79c705c9758e",
+                            "rhsNodeUid": "05d3f6af-fa00-4d7c-b490-f971d3944aea"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        16,
+                        256,
+                        512
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "in",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "bc141cbe-e98a-4b42-b40e-59cb15a6f13b",
+                                "destinationUUID": "34e47398-dbec-4fd3-b05e-d65257a9edd7",
+                                "sourceName": "FindImageOnScreenNode19_Found",
+                                "destinationName": "convertTo5_in",
+                                "uuid": "f7a6e71f-3a08-45a1-bc4d-2d9966421e4f",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    },
+                    "currDataType": "BoolPin"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "result",
+                    "package": "PyFlowBase",
+                    "fullName": "convertTo5_result",
+                    "dataType": "AnyPin",
+                    "direction": 1,
+                    "value": "\"False\"",
+                    "uuid": "94c21881-e3e7-4043-84a8-545bc486e5cc",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "convertTo5",
+                            "outPinId": 1,
+                            "rhsNodeName": "combineStrings6",
+                            "inPinId": 2,
+                            "lhsNodeUid": "05d3f6af-fa00-4d7c-b490-f971d3944aea",
+                            "rhsNodeUid": "d948fa6f-1676-416e-a2ce-b925ff47362b"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "result",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "94c21881-e3e7-4043-84a8-545bc486e5cc",
+                                "destinationUUID": "aa8e55c5-dbb9-4c57-9d7c-0a6aacc09e1e",
+                                "sourceName": "convertTo5_result",
+                                "destinationName": "combineStrings6_str2",
+                                "uuid": "f572f30b-cd84-4711-86b7-a9aa5ddb0db5",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    },
+                    "currDataType": "StringPin"
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "convertTo5"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">convertTo5</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": 233.0,
+            "y": 42.0,
+            "currDataType": "StringPin"
+        },
+        {
+            "package": "Automator",
+            "lib": "StringUtilitiesLib",
+            "type": "combineStrings",
+            "owningGraphName": "root",
+            "name": "combineStrings6",
+            "uuid": "d948fa6f-1676-416e-a2ce-b925ff47362b",
+            "inputs": [
+                {
+                    "name": "separator",
+                    "package": "PyFlowBase",
+                    "fullName": "combineStrings6_separator",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"__Bool=>__\"",
+                    "uuid": "15c396cd-e1b0-49cd-84af-fa1ffbc7abda",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeString8",
+                            "outPinId": 1,
+                            "rhsNodeName": "combineStrings6",
+                            "inPinId": 3,
+                            "lhsNodeUid": "32098a09-a3b6-4276-a27c-e413f3d22f99",
+                            "rhsNodeUid": "d948fa6f-1676-416e-a2ce-b925ff47362b"
+                        }
+                    ],
+                    "pinIndex": 3,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "separator",
+                        "wires": {
+                            "3": {
+                                "sourceUUID": "208407bf-041b-4da9-8336-0cef80539439",
+                                "destinationUUID": "15c396cd-e1b0-49cd-84af-fa1ffbc7abda",
+                                "sourceName": "makeString8_out",
+                                "destinationName": "combineStrings6_separator",
+                                "uuid": "bb9f43dc-b41c-4310-8014-f259aef1805b",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "str2",
+                    "package": "PyFlowBase",
+                    "fullName": "combineStrings6_str2",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"False\"",
+                    "uuid": "aa8e55c5-dbb9-4c57-9d7c-0a6aacc09e1e",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "convertTo5",
+                            "outPinId": 1,
+                            "rhsNodeName": "combineStrings6",
+                            "inPinId": 2,
+                            "lhsNodeUid": "05d3f6af-fa00-4d7c-b490-f971d3944aea",
+                            "rhsNodeUid": "d948fa6f-1676-416e-a2ce-b925ff47362b"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "str2",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "94c21881-e3e7-4043-84a8-545bc486e5cc",
+                                "destinationUUID": "aa8e55c5-dbb9-4c57-9d7c-0a6aacc09e1e",
+                                "sourceName": "convertTo5_result",
+                                "destinationName": "combineStrings6_str2",
+                                "uuid": "f572f30b-cd84-4711-86b7-a9aa5ddb0db5",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "str1",
+                    "package": "PyFlowBase",
+                    "fullName": "combineStrings6_str1",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"1044__<==x&y==>__1188\"",
+                    "uuid": "9981e0f1-d406-4f9c-a27a-faeeae80feb6",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "combineStrings",
+                            "outPinId": 1,
+                            "rhsNodeName": "combineStrings6",
+                            "inPinId": 1,
+                            "lhsNodeUid": "c6ae9a7c-a5f3-4d1f-a1fa-d0c0f2c72f67",
+                            "rhsNodeUid": "d948fa6f-1676-416e-a2ce-b925ff47362b"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "str1",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "91bd52cc-48cc-4f76-8631-ae1b27e5eae9",
+                                "destinationUUID": "9981e0f1-d406-4f9c-a27a-faeeae80feb6",
+                                "sourceName": "combineStrings_out",
+                                "destinationName": "combineStrings6_str1",
+                                "uuid": "57f8de87-03ce-44ca-b67e-e1df2428b84f",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "out",
+                    "package": "PyFlowBase",
+                    "fullName": "combineStrings6_out",
+                    "dataType": "StringPin",
+                    "direction": 1,
+                    "value": "\"1044__<==x&y==>__1188__Bool=>__False\"",
+                    "uuid": "d1768668-9cb7-4f24-b67f-c393ac8ef9dc",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "combineStrings6",
+                            "outPinId": 1,
+                            "rhsNodeName": "consoleOutput",
+                            "inPinId": 2,
+                            "lhsNodeUid": "d948fa6f-1676-416e-a2ce-b925ff47362b",
+                            "rhsNodeUid": "bb65d76c-cf3f-4dca-9791-c60dcac5a107"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "out",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "d1768668-9cb7-4f24-b67f-c393ac8ef9dc",
+                                "destinationUUID": "c4dc06e5-2b29-4247-a960-07e203797f14",
+                                "sourceName": "combineStrings6_out",
+                                "destinationName": "consoleOutput_entity",
+                                "uuid": "38a8f852-4aa4-4a3c-85b2-e9e664cca9d2",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "combineStrings6"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">combineStrings6</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": 410.0,
+            "y": 24.0
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": "DefaultLib",
+            "type": "makeString",
+            "owningGraphName": "root",
+            "name": "makeString8",
+            "uuid": "32098a09-a3b6-4276-a27c-e413f3d22f99",
+            "inputs": [
+                {
+                    "name": "s",
+                    "package": "PyFlowBase",
+                    "fullName": "makeString8_s",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"__Bool=>__\"",
+                    "uuid": "bc094281-37a2-476a-98a3-12857f10bcfb",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "s",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "out",
+                    "package": "PyFlowBase",
+                    "fullName": "makeString8_out",
+                    "dataType": "StringPin",
+                    "direction": 1,
+                    "value": "\"__Bool=>__\"",
+                    "uuid": "208407bf-041b-4da9-8336-0cef80539439",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeString8",
+                            "outPinId": 1,
+                            "rhsNodeName": "combineStrings6",
+                            "inPinId": 3,
+                            "lhsNodeUid": "32098a09-a3b6-4276-a27c-e413f3d22f99",
+                            "rhsNodeUid": "d948fa6f-1676-416e-a2ce-b925ff47362b"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "out",
+                        "wires": {
+                            "3": {
+                                "sourceUUID": "208407bf-041b-4da9-8336-0cef80539439",
+                                "destinationUUID": "15c396cd-e1b0-49cd-84af-fa1ffbc7abda",
+                                "sourceName": "makeString8_out",
+                                "destinationName": "combineStrings6_separator",
+                                "uuid": "bb9f43dc-b41c-4310-8014-f259aef1805b",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "makeString8"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">makeString8</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": 277.0,
+            "y": 97.0
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": null,
+            "type": "cliexit",
+            "owningGraphName": "root",
+            "name": "cliexit",
+            "uuid": "22ac3630-9c06-4fa7-96d9-214afba802be",
+            "inputs": [
+                {
+                    "name": "inExec",
+                    "package": "PyFlowBase",
+                    "fullName": "cliexit_inExec",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "391a5766-7f4e-46bd-adad-1e0d7c841438",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "consoleOutput",
+                            "outPinId": 1,
+                            "rhsNodeName": "cliexit",
+                            "inPinId": 1,
+                            "lhsNodeUid": "bb65d76c-cf3f-4dca-9791-c60dcac5a107",
+                            "rhsNodeUid": "22ac3630-9c06-4fa7-96d9-214afba802be"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "inExec",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "711bdc99-3188-43ea-92be-016d5ebfc572",
+                                "destinationUUID": "391a5766-7f4e-46bd-adad-1e0d7c841438",
+                                "sourceName": "consoleOutput_outExec",
+                                "destinationName": "cliexit_inExec",
+                                "uuid": "175d7b8e-6bb5-4065-9685-fb7f8076d95c",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [],
+            "meta": {
+                "var": {},
+                "label": "cliexit"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">cliexit</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": 586.0,
+            "y": -44.0
+        }
+    ],
+    "depth": 1,
+    "isRoot": true,
+    "parentGraphName": "None",
+    "fileVersion": "2.0.1",
+    "activeGraph": "root"
+}

@@ -14,6 +14,14 @@ from pathlib import Path
 load_dotenv()
 image_temp_path = os.environ.get('IMG_TEMP_PATH')
 
+# Assuming PyFlow can handle a list of tuples for dropdown generation
+clickTypes = [
+    ("LEFT_CLICK", "left_click"),
+    ("RIGHT_CLICK", "right_click"),
+    ("DOUBLE_LEFT_CLICK", "double_left_click"),
+    ("DOUBLE_RIGHT_CLICK", "double_right_click"),
+    ("NO_CLICK", "no_click")
+]
 
 def check_coordinates_within_bounds(x: int, y: int):
     # Get the screen size
@@ -85,16 +93,16 @@ def find_image_on_screen(image_path, threshold=0.8, scale_range=(0.5, 2.0), scal
     print("didn't find ", image_path, " image!")
     return None
 
-class AutomatorActionsLib(FunctionLibraryBase):
+class Automator_CoreActionsLib(FunctionLibraryBase):
     def __init__(self, packageName):
-        super(AutomatorActionsLib, self).__init__(packageName)
+        super(Automator_CoreActionsLib, self).__init__(packageName)
 
     @staticmethod
-    @IMPLEMENT_NODE(returns=None, nodeType=NodeTypes.Callable, meta={NodeMeta.CATEGORY: 'AutomatorActionsLib', NodeMeta.KEYWORDS: ['click']})
+    @IMPLEMENT_NODE(returns=None, nodeType=NodeTypes.Callable, meta={NodeMeta.CATEGORY: 'CoreActions', NodeMeta.KEYWORDS: ['click']})
     def clickAction(imagePath=('StringPin', None),
                     exactX=('IntPin', None), exactY=('IntPin', None),
                     offsetX=('IntPin', 0), offsetY=('IntPin', 0),
-                    clickType=('StringPin', 'left_click'),
+                    clickType=('StringPin', "LEFT_CLICK", {"ValueList": clickTypes}),
                     useCursorPosition=('BoolPin', False),
                     regionX1=('IntPin', None), regionY1=('IntPin', None),
                     regionX2=('IntPin', None), regionY2=('IntPin', None),
